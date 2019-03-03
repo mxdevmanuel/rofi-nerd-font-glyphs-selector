@@ -1,0 +1,20 @@
+macro(add_glob cur_list)
+    #file(GLOB __tmp RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${ARGN})
+    file(GLOB __tmp ${ARGN})
+    list(APPEND ${cur_list} ${__tmp})
+endmacro()
+
+macro(add_headers_only prefix common_path)
+    add_glob(${prefix} ${common_path}/*.h)
+endmacro()
+
+macro(add_sources_only prefix common_path)
+    add_glob(${prefix} ${common_path}/*.c)
+    add_glob(${prefix} ${common_path}/*.cpp)
+    add_glob(${prefix} ${common_path}/*.cxx)
+endmacro()
+
+macro(add_headers_and_sources prefix_h prefix_s common_path)
+    add_headers_only(${prefix_h} ${common_path})
+    add_sources_only(${prefix_s} ${common_path})
+endmacro()
