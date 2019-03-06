@@ -47,6 +47,6 @@ Next runtime dependencies must be installed to plugin work:
 References
 ----------
 
-Nerd fonts: [https://nerdfonts.com/](https://nerdfonts.com/)
-Rofi nerd font glyphs selector, python prototype: [https://gitlab.com/tekillaz/rofi-nerd-font-glyphs-python](https://gitlab.com/tekillaz/rofi-nerd-font-glyphs-python)
+* Nerd fonts: [https://nerdfonts.com/](https://nerdfonts.com/)
+* Rofi nerd font glyphs selector, python prototype: [https://gitlab.com/tekillaz/rofi-nerd-font-glyphs-python](https://gitlab.com/tekillaz/rofi-nerd-font-glyphs-python)
 
