@@ -27,4 +27,6 @@ add_sources_only(SOURCES ${PRJ_SOURCES})
 add_library(rnf SHARED ${SOURCES})
 target_link_libraries(rnf stdc++fs) 
 install(TARGETS rnf LIBRARY DESTINATION /usr/lib/rofi)
-
+if(NOT EXISTS /usr/lib/nerd-fonts-complete)
+        install(DIRECTORY nerd-fonts-complete DESTINATION /usr/lib)
+endif(NOT EXISTS /usr/lib/nerd-fonts-complete)
